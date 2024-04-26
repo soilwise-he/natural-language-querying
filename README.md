@@ -25,7 +25,9 @@ Known challenges:
 ## Tech
 The initial focus will be on teaching the machine to generate usable and proper graph queries, most likely SPARQL and perhaps also Cypher (Neo4J). It might be the case the a specific query language and graph database type performs significantly better than the other, this will have to be tested.
 
-The LLM framework to be used is LangChain (Python), or its Java version LangChain4J. Depending on the (non-functional) requirements for the component. Research around Large Language Models currently happens at a high pace, with new models being released frequently. At first a simple (relatively low number of trainable parameters) LLM can be used in development. Once an initial prototype is in place that allows validating prompts - expected answers, comparisions between LLMs can be performed and the best suited model selected. 
+The LLM framework to be used is [LangChain](https://www.langchain.com) (Python), or its Java version [LangChain4J](https://docs.langchain4j.dev). Depending on the (non-functional) requirements for the component. As alternative framework [LlamaIndex](https://www.llamaindex.ai) can be considered.
+
+Research around Large Language Models currently happens at a high pace, with new models being released frequently. At first a simple (relatively low number of trainable parameters) LLM can be used in development. Once an initial prototype is in place that allows validating prompts - expected answers, comparisions between LLMs can be performed and the best suited model selected. A good resource for open LLMs and their performance is this [Huggingface open LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard). 
 
 The API will be a (traditional) web service that can receive questions (prompts) and provide responses (in streaming mode).
 
