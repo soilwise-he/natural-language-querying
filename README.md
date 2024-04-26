@@ -4,6 +4,10 @@ Application component that provides Natural Language Querying (NLQ) services, ma
 ## Purpose
 Natural language quering (NLQ) in general enables users to interact with complex database. Including NoSQL databases, such as Knowledge Graphs. NLQ systems can be seen as a subset of Question-Answering (QA) systems, which ar designed to answer questions posed by users in natural language. The overall goal is to enhance knowledge discovery and enable non-technical users to benefit from all the information for knowledge-driven decision-making.
 
+## Out-of-Scope
+- This component will only provide NLQ services, it will not include a graphical user interface such as a ChatBot.
+- This component is not intended to use LLMs to assist in creation and curation of KGs or ontologies.
+
 ## Description
 The research field of NLQ is currently dominated by approaches using Large Language Models (LLMs) to understand human questions and provide natural language answers. LLMs and conversational interfaces (e.g. ChatBots) can be beneficial for exploring and extracting information from (extremely) large knowledge structures.
 
