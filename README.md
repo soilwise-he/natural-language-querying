@@ -14,7 +14,7 @@ The research field of NLQ is currently dominated by approaches using Large Langu
 NLQs using LLMs can be implemented in a number of ways:
 - Retrieval Augmented Generation (RAG) systems, that enhance the grounding context of an LLM for covering questions specific to a domain or proprietary knowledge. A RAG implementation needs various subcomponents, such as an LLM and a vector database.
 - Using an LLM to translate questions into structured database queries, e.g. using SPARQL or Cypher. Various methods can be used to improve the queries that are created and avoid hallucinations, e.g. few shot prompts, using a LLM that is trained for creating code, or providing the ontology as part of RAG.
-- Fine-tuning a custom LLM with proprietary data, usually the most costly option.
+- Fine-tuning a custom LLM with proprietary data and/or knowledge graphs. This is usally the most costly option, requiring sufficient and curated training data and substantial compute time. It is also inflexible, since the KG gets 'baked-in' to the LLM. A possible benefit is that it creates a local custom LLM that can give the best performance for a specific task or knowledge domain.
 
 Known challenges:
 - Contextual understanding
@@ -23,7 +23,7 @@ Known challenges:
 - Transparency and trustworthiness
 
 ## Tech
-The initial focus will be on teaching the machine to generate usable and proper graph queries, most likely SPARQL and perhaps also Cypher (Neo4J). 
+The initial focus will be on teaching the machine to generate usable and proper graph queries, most likely SPARQL and perhaps also Cypher (Neo4J). It might be the case the a specific query language and graph database type performs significantly better than the other, this will have to be tested.
 
 The LLM framework to be used is LangChain (Python), or its Java version LangChain4J. Depending on the (non-functional) requirements for the component. Research around Large Language Models currently happens at a high pace, with new models being released frequently. At first a simple (relatively low number of trainable parameters) LLM can be used in development. Once an initial prototype is in place that allows validating prompts - expected answers, comparisions between LLMs can be performed and the best suited model selected. 
 
