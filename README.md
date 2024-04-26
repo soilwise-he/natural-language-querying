@@ -28,3 +28,6 @@ The initial focus will be on teaching the machine to generate usable and proper 
 The LLM framework to be used is LangChain (Python), or its Java version LangChain4J. Depending on the (non-functional) requirements for the component. Research around Large Language Models currently happens at a high pace, with new models being released frequently. At first a simple (relatively low number of trainable parameters) LLM can be used in development. Once an initial prototype is in place that allows validating prompts - expected answers, comparisions between LLMs can be performed and the best suited model selected. 
 
 The API will be a (traditional) web service that can receive questions (prompts) and provide responses (in streaming mode).
+
+## Hardware
+Depending on the chosen LLM (size / number of parameters) and its usage (tokens in/out, number of requests/sec, etc.) specific hardware might be needed to implement a usable service. E.g. one or more computers/nodes with medium or high end GPUs can be required, as well as a load balancer. Another option is to make use of a hosted LLM service, with usually a pay-per-use subscription. Some LLMs (and vector stores) are available as Docker containers.
