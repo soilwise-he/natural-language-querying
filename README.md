@@ -1,4 +1,4 @@
-# About
+# NATURAL LANGUAGE QUERYING (NLQ) - T3.3
 Application component that provides Natural Language Querying (NLQ) services, making knowledge stored in a graph database accessible for e.g. a ChatBot UI.
 
 ## Purpose
