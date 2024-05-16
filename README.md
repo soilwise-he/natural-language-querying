@@ -23,7 +23,7 @@ Known challenges:
 - Transparency and trustworthiness
 
 ## Supported (human) languages
-The aim is to prefer the use of multilingual NLP components as much as possible, e.g. embedding models that are multilingual, and LLMs that have been trained on not only english text. Even though at first most knowledge and human input will be in English, it is expected that users will request support for other languages as well.
+The aim is to prefer the use of multilingual NLP components as much as possible, e.g. embedding models that are multilingual, and LLMs that have been trained on not only english text. Even though at first most knowledge and human input will be in English, it is expected that users will request support for other languages as well. (See issue [#13][i13])
 
 ## Tech
 The initial focus will be on teaching the machine to generate usable and proper graph queries, most likely SPARQL and perhaps also Cypher (Neo4J). It might be the case the a specific query language and graph database type performs significantly better than the other, this will have to be tested.
@@ -36,3 +36,7 @@ The API will be a (traditional) web service that can receive questions (prompts)
 
 ## Hardware
 Depending on the chosen LLM (size / number of parameters) and its usage (tokens in/out, number of requests/sec, etc.) specific hardware might be needed to implement a usable service. E.g. one or more computers/nodes with medium or high end GPUs can be required, as well as a load balancer. Another option is to make use of a hosted LLM service, with usually a pay-per-use subscription. Some LLMs (and vector stores) are available as Docker containers.
+
+---
+
+[i13]: https://github.com/soilwise-he/natural-language-querying/issues/13
