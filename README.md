@@ -22,6 +22,9 @@ Known challenges:
 - Challenges in modeling and storing data
 - Transparency and trustworthiness
 
+## Supported (human) languages
+The aim is to prefer the use of multilingual NLP components as much as possible, e.g. embedding models that are multilingual, and LLMs that have been trained on not only english text. Even though at first most knowledge and human input will be in English, it is expected that users will request support for other languages as well.
+
 ## Tech
 The initial focus will be on teaching the machine to generate usable and proper graph queries, most likely SPARQL and perhaps also Cypher (Neo4J). It might be the case the a specific query language and graph database type performs significantly better than the other, this will have to be tested.
 
