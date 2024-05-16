@@ -8,6 +8,8 @@ Natural language quering (NLQ) in general enables users to interact with complex
 - This component will only provide NLQ services, it will not include a graphical user interface such as a ChatBot.
 - This component is not intended to use LLMs to assist in creation and curation of KGs or ontologies.
 
+Note that in issue [#5][i5] it is discussed to still add a simple [chainlit](https://chainlit.io) based UI to the component for prototype / demo purpose only.
+
 ## Description
 The research field of NLQ is currently dominated by approaches using Large Language Models (LLMs) to understand human questions and provide natural language answers. LLMs and conversational interfaces (e.g. ChatBots) can be beneficial for exploring and extracting information from (extremely) large knowledge structures.
 
@@ -39,4 +41,5 @@ Depending on the chosen LLM (size / number of parameters) and its usage (tokens 
 
 ---
 
+[i5]: https://github.com/soilwise-he/natural-language-querying/issues/5
 [i13]: https://github.com/soilwise-he/natural-language-querying/issues/13
