@@ -24,6 +24,8 @@ Known challenges:
 - Challenges in modeling and storing data
 - Transparency and trustworthiness
 
+See issue [#2][i2] for the discussion on, and selection of the initial concept implementation.
+
 ## Supported (human) languages
 The aim is to prefer the use of multilingual NLP components as much as possible, e.g. embedding models that are multilingual, and LLMs that have been trained on not only english text. Even though at first most knowledge and human input will be in English, it is expected that users will request support for other languages as well. (See issue [#13][i13])
 
@@ -41,5 +43,6 @@ Depending on the chosen LLM (size / number of parameters) and its usage (tokens 
 
 ---
 
+[i2]: https://github.com/soilwise-he/natural-language-querying/issues/2
 [i5]: https://github.com/soilwise-he/natural-language-querying/issues/5
 [i13]: https://github.com/soilwise-he/natural-language-querying/issues/13
