@@ -26,6 +26,10 @@ Known challenges:
 
 See issue [#2][i2] for the discussion on, and selection of the initial concept implementation.
 
+> Following the (Brugge) architecture, the LLM component only interacts with the triple store, using SPARQL queries. So at first it can work with text and relations it can retrieve from there. After the user selects one or more documents these can be retrieved and used as input for RAG. Importing documents into a vector store can take a few minutes (depending on size of the documents, embedding model used, and hardware configuration). After that the user can 'talk' with these documents to have more detailed access to the knowledge contained within them.
+
+> To avoid spending a lot of time perfecting the generation of SPARQL queries by the LLM, we can use known fixed queries and have the LLM use them via "tool calling".
+
 ## Supported (human) languages
 The aim is to prefer the use of multilingual NLP components as much as possible, e.g. embedding models that are multilingual, and LLMs that have been trained on not only english text. Even though at first most knowledge and human input will be in English, it is expected that users will request support for other languages as well. (See issue [#13][i13])
 
