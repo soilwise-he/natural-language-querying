@@ -42,11 +42,14 @@ Research around Large Language Models currently happens at a high pace, with new
 
 The API will be a (traditional) web service that can receive questions (prompts) and provide responses (in streaming mode).
 
+In case a vector store is needed (for RAG), the initial choice will be to use the [milvus](https://milvus.io) stand-alone vector database (see issue [#3][i3]).
+
 ## Hardware
 Depending on the chosen LLM (size / number of parameters) and its usage (tokens in/out, number of requests/sec, etc.) specific hardware might be needed to implement a usable service. E.g. one or more computers/nodes with medium or high end GPUs can be required, as well as a load balancer. Another option is to make use of a hosted LLM service, with usually a pay-per-use subscription. Some LLMs (and vector stores) are available as Docker containers.
 
 ---
 
 [i2]: https://github.com/soilwise-he/natural-language-querying/issues/2
+[i3]: https://github.com/soilwise-he/natural-language-querying/issues/3
 [i5]: https://github.com/soilwise-he/natural-language-querying/issues/5
 [i13]: https://github.com/soilwise-he/natural-language-querying/issues/13
